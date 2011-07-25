@@ -6,6 +6,7 @@ gem 'rails', '3.1.0.rc4'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'pg'
 
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
@@ -23,6 +24,8 @@ gem 'therubyracer'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+#gem 'gravatar_image_tag'
 
 group :test do
   # Pretty printed test output
