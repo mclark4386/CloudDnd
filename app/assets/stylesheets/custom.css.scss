@@ -1,6 +1,7 @@
 $main-color: #777;
 $section-color: lighten($main-color, 50);
 $section-text-color: darken($main-color, 20);
+$main-shadow-color:#888;
 
 .container {
     width: 80%;
@@ -225,6 +226,10 @@ a.signup_button {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+	
+	-moz-box-shadow: 10px 10px 5px $main-shadow-color;
+	-webkit-box-shadow: 10px 10px 5px $main-shadow-color;
+	box-shadow: 10px 10px 5px $main-shadow-color;
 }
 
 /*  User show page */
