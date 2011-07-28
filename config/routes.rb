@@ -1,5 +1,11 @@
 CloudDnD::Application.routes.draw do
 	
+  get "users/new"
+
+  get "users/create"
+
+  get "users/destroy"
+
 	root :to => 'pages#home'
 
 	match 'about' => 'pages#about'
