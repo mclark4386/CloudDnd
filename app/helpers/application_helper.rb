@@ -11,8 +11,4 @@ module ApplicationHelper
 			"#{base} | #{@title}"
 		end
 	end
-	
-	def current_user
-		nil
-	end
 end

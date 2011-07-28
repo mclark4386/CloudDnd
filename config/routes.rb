@@ -1,19 +1,17 @@
 CloudDnD::Application.routes.draw do
-	
-  get "users/new"
 
-  get "users/create"
-
-  get "users/destroy"
+	resources :sessions#, :only =>[:new, :create, :destroy]
+	resources :users#, :only =>[:create, :new, :destroy]
 
 	root :to => 'pages#home'
 
 	match 'about' => 'pages#about'
 	match 'contact' => 'pages#contact'
 	
-	#TODOS:
-	match 'login' => 'pages#home'
-	match 'logout' => 'pages#home'
+	match 'signup' => 'users#new'
+
+	match 'login' => 'sessions#new'
+	match 'logout' => 'sessions#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
