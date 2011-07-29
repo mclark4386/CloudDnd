@@ -1,7 +1,8 @@
 CloudDnD::Application.routes.draw do
 
-	resources :sessions#, :only =>[:new, :create, :destroy]
+ 	resources :sessions#, :only =>[:new, :create, :destroy]
 	resources :users#, :only =>[:create, :new, :destroy]
+	resources :articles
 
 	root :to => 'pages#home'
 

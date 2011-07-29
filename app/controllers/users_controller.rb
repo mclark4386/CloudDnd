@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	load_and_authorize_resource
   def new
 	@user = User.new
   end
@@ -13,6 +14,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
+	@user.destroy
+  end
+
+  def index
+	@users = User.find(:all)
   end
 
 end

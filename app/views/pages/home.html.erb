@@ -1,2 +1,7 @@
 <h1>Welcome!</h1>
 <p><%= link_to 'Sign up!', signup_path, :class =>"signup_button round" %></p>
+<% unless @articles.nil? %>
+		<% for article in @articles do %>
+			<%= article.title %><br />
+		<% end %>
+<% end %>

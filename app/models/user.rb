@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :email, :password, :password_confirmation, :name
+	has_many :articles
 
 	has_secure_password #Only in rails 3.1+
 

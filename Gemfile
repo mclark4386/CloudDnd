@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem 'rails', :branch => '3-1-stable' 
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -20,9 +20,15 @@ gem 'therubyracer'
 gem 'oauth'
 gem 'oauth-plugin'
 
+gem 'cancan'
+
+gem 'tzinfo'
+
 #Started working on http://railscasts.com/episodes/235-omniauth-part-1?autoplay=true
 #probably not going to work, but interesting
 #gem 'omniauth'
+#Maybe this will work better
+#gem "oa-oauth", :require => "omniauth/oauth", :git => 'git://github.com/intridea/omniauth.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'

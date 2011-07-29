@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-CloudDnD::Application.config.secret_token = '1b39e064c0b7e14f6000af04110a213223a3874e86121ae11e7d4ad2ce375e2070913d79753e8a58526b725722a6d6f209298b059846a564643e18a1fd123c48'
+CloudDnD::Application.config.secret_token = 'ba8dbc2c1e976b2cbae7b3641eef01b7c6133fb579bb1935e9d674251acbcce1fb407454a6bec07b7fff6fc935799cd712eb8837e5b44e4c5a8ed37fe6e07ea1'
