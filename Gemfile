@@ -8,6 +8,10 @@ gem 'rails', :branch => '3-1-stable'
 gem 'sqlite3'
 gem 'pg'
 
+gem 'activerecord',"~> 3.1.0.rc"
+gem 'activesupport',"~> 3.1.0.rc"
+gem 'activemodel',"~> 3.1.0.rc"
+
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
