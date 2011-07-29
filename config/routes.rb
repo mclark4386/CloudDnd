@@ -1,5 +1,7 @@
 CloudDnD::Application.routes.draw do
 
+  get "password_resets/new"
+
  	resources :sessions#, :only =>[:new, :create, :destroy]
 	resources :users#, :only =>[:create, :new, :destroy]
 	resources :articles

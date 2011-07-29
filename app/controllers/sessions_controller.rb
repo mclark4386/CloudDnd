@@ -8,7 +8,11 @@ class SessionsController < ApplicationController
 	user = User.find_by_email(params[:email])
 
 	if user && user.authenticate(params[:password])
-		session[:user_id] = user.id
+		if params[:remember_me]
+			cookies.permanent[:auth_token] = user.auth_token
+		else
+			cookies[:auth_token] = user.auth_token
+		end
 		redirect_to root_url, :flash=>{ :success => "Logged in!"}
 	else
 		flash.now.alert = "Invalid email or password"
@@ -17,7 +21,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-	session[:user_id] = nil
+	cookies[:auth_token] = nil
 	redirect_to root_url, :notice => "Logged out!"
   end
 

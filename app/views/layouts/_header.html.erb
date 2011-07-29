@@ -4,6 +4,7 @@
     <ul>
       <li><%= link_to "Home", root_path %></li>
 	<% user = @current_user %>
+	<%= user %>
 	<% if user %>
             <li><%= link_to "Logout", logout_path %></li>
 	<% else %>
