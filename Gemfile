@@ -17,11 +17,12 @@ gem 'jquery-rails'
 gem 'therubyracer'
 
 #OAuth depends
-#gem 'oauth'
-#gem 'oauth-plugin'
+gem 'oauth'
+gem 'oauth-plugin'
 
 #Started working on http://railscasts.com/episodes/235-omniauth-part-1?autoplay=true
-gem 'omniauth'
+#probably not going to work, but interesting
+#gem 'omniauth'
 
 # Use unicorn as the web server
 # gem 'unicorn'
