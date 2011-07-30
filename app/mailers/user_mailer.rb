@@ -6,10 +6,9 @@ class UserMailer < ActionMailer::Base
   #
   #   en.user_mailer.activate_user.subject
   #
-  def activate_user
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def activate_user(user)
+    @user = user
+    mail :to =>user.email, :subject=>"User Confirmation"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

@@ -28,7 +28,6 @@ class Ability
 		can :manage, :all
 	else
 		can :create, User
-		can :create, PasswordResets
 	end
 		can :read, :all
   end
