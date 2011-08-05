@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def create
 	@user = User.new(params[:user])
 	if @user.save
+		UserMailer.activate_user(@user)
 		redirect_to root_url, :notice => "Confirmation email sent!"
 	else
 		render :new

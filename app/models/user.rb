@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
 	has_secure_password #Only in rails 3.1+
 
 	validates :password, :presence => {:on => :create}
-	validates :email, :presence => {:on => :create}
+	validates :email, :presence => {:on => :create}, :uniqueness => :true
 
 	before_create { generate_token(:auth_token)}
 
