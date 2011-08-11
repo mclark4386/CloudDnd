@@ -22,8 +22,8 @@ gem 'jquery-rails'
 gem 'therubyracer'
 
 #OAuth depends
-gem 'oauth'
-gem 'oauth-plugin'
+gem 'oauth2'
+#gem 'oauth-plugin'
 
 gem 'cancan'
 

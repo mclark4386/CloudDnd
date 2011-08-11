@@ -10,6 +10,7 @@ $main-shadow-color:#222;
 
 body {
     background:$main-color;
+    font-family: "HammerheadMediumRegular", Georgia, serif;
 }
 
 header {
@@ -267,3 +268,55 @@ td.sidebar {
 .notice a {color:#514721;}
 .success a {color:#264409;}
 .info a {color:#205791;}
+
+
+
+@font-face {
+    font-family: 'HammerheadRegular';
+    src: url('HammerheadRegular-webfont.eot');
+    src: url('HammerheadRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HammerheadRegular-webfont.woff') format('woff'),
+         url('HammerheadRegular-webfont.ttf') format('truetype'),
+         url('HammerheadRegular-webfont.svg#HammerheadRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HammerheadMediumRegular';
+    src: url('HammerheadMedium-webfont.eot');
+    src: url('HammerheadMedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HammerheadMedium-webfont.woff') format('woff'),
+         url('HammerheadMedium-webfont.ttf') format('truetype'),
+         url('HammerheadMedium-webfont.svg#HammerheadMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HammerheadBoldRegular';
+    src: url('HammerheadBold-webfont.eot');
+    src: url('HammerheadBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HammerheadBold-webfont.woff') format('woff'),
+         url('HammerheadBold-webfont.ttf') format('truetype'),
+         url('HammerheadBold-webfont.svg#HammerheadBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HammerheadBlackRegular';
+    src: url('HammerheadBlack-webfont.eot');
+    src: url('HammerheadBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HammerheadBlack-webfont.woff') format('woff'),
+         url('HammerheadBlack-webfont.ttf') format('truetype'),
+         url('HammerheadBlack-webfont.svg#HammerheadBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
