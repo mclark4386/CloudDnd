@@ -13,6 +13,8 @@ gem 'activesupport',"~> 3.1.0.rc"
 gem 'activemodel',"~> 3.1.0.rc"
 gem 'actionmailer',"~> 3.1.0.rc"
 
+gem 'tlsmail'
+
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
